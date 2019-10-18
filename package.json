@@ -1,6 +1,6 @@
 {
-  "name": "coinselect",
-  "version": "3.1.11",
+  "name": "mm-coinselect",
+  "version": "0.1.0",
   "description": "A transaction input selection module for bitcoin.",
   "keywords": [
     "coinselect",
@@ -16,9 +16,9 @@
     "optimizing",
     "bitcoin"
   ],
-  "homepage": "https://github.com/dcousens/coinselect",
+  "homepage": "https://github.com/mainmeta-nmg/mm-coinselect",
   "bugs": {
-    "url": "https://github.com/dcousens/coinselect/issues"
+    "url": "https://github.com/mainmeta-nmg/mm-coinselect/issues"
   },
   "license": "MIT",
   "author": "Daniel Cousens",
@@ -33,7 +33,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dcousens/coinselect.git"
+    "url": "https://github.com/mainmeta-nmg/mm-coinselect.git"
   },
   "scripts": {
     "coverage": "nyc --check-coverage --branches 100 --functions 100 tape test/*.js",
