@@ -14,8 +14,8 @@ function outputBytes(output) {
     return TX_OUTPUT_BASE + (output.script ? output.script.length : TX_OUTPUT_PUBKEYHASH);
 }
 
-functino feeAmount(bytes, feeRate) {
-  Math.ceil(bytes * feeRate);
+function feeAmount(bytes, feeRate) {
+  return Math.ceil(bytes * feeRate);
 }
 
 function dustThreshold(output, feeRate) {
@@ -79,6 +79,7 @@ function finalize(inputs, outputs, feeRate) {
 }
 
 module.exports = {
+    feeAmount: feeAmount,
     dustThreshold: dustThreshold,
     finalize: finalize,
     inputBytes: inputBytes,
