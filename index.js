@@ -13,7 +13,7 @@ function utxoAmountScore(x, feeRate) {
 
 module.exports = function coinSelect(utxos, outputs, feeRate) {
     utxos = utxos.concat().sort(function(a, b) {
-        const ancestorScore = utxoAncestorCountScore(b) - utxoAncestorCountScore(a);
+        const ancestorScore = utxoAncestorCountScore(a) - utxoAncestorCountScore(b);
         if (ancestorScore == 0) return utxoAmountScore(b, feeRate) - utxoAmountScore(a, feeRate);
         else return ancestorScore;
     });
